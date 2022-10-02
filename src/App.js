@@ -6,20 +6,21 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(0);
 
   const generateNumber = () => {
-    debugger;
     setRandomNumber(randm);
   };
   const randm = Math.floor(Math.random() * 1000);
   return (
     <div className="App">
-      <h1>Random Number Generator</h1>
-      <div className="counter">{randomNumber}</div>
+      <div className="container">
+        <h1>Random Number Generator</h1>
+        <div className="counter">{randomNumber}</div>
 
-      <br />
+        <br />
 
-      <button className="Bttn" onClick={generateNumber}>
-        Generate Number
-      </button>
+        <button className="Bttn" onClick={generateNumber}>
+          Generate Number
+        </button>
+      </div>
     </div>
   );
 }
